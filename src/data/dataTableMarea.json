@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "fechaInicio": "2024-11-2",
+      "fechaTermino": "2024-12-2" ,
+      "marea": 123,
+      "empresa": "Empresa A",
+      "documento": "documento1.pdf"
+    },
+    {
+      "id": 2,
+      "fechaInicio": "2024-10-20",
+      "fechaTermino": "2024-11-20" ,
+      "marea": 124,
+      "empresa": "Empresa B",
+      "documento": "documento2.pdf"
+    },
+    {
+      "id": 3,
+      "fechaInicio": "2024-10-15",
+      "fechaTermino": "2024-11-15" ,
+      "marea": 125,
+      "empresa": "Empresa C",
+      "documento": "documento3.pdf"
+    }
+  ]
+  
