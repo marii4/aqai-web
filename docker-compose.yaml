@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react_frontend
+    ports:
+      - "4000:4000"
+    networks:
+      - react_network
+
+networks:
+  react_network:

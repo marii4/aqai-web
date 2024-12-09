@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Table,
   TableBody,
@@ -14,15 +14,33 @@ import {
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import buzosData from "../data/buzos.json"; // Importar el JSON de buzos
+import axios from "axios";
 
 const TableBuzos = () => {
   const [buzos, setBuzos] = useState(buzosData);
   
+  useEffect( () =>{
+    const FetchData =  async () =>{
+        try{
+          const response = await axios.get("http://localhost:3000/api/v1/buzos/Compañia1", {
+            withCredentials: true, // Incluye cookies
+          })
+          if(response.data){
+            setBuzos(response.data.data)
+            console.log(response)
+
+          }
+        }catch(e){
+          console.error(e)
+        }
+    }
+    FetchData()
+  },[buzos])
 
   // Función para manejar el cambio de estado del switch
   const handleSwitchChange = (index) => {
     const updatedBuzos = [...buzos];
-    updatedBuzos[index].habilitado = !updatedBuzos[index].habilitado;
+    updatedBuzos[index].estaHabilitado = !updatedBuzos[index].estaHabilitado;
     setBuzos(updatedBuzos);
   };
 
@@ -54,7 +72,7 @@ const TableBuzos = () => {
               </TableCell>
               <TableCell align="center">
                 <Switch
-                  checked={buzo.habilitado}
+                  checked={buzo.estaHabilitado}
                   onChange={() => handleSwitchChange(index)}
                   color="success"
                 />
