@@ -1,13 +1,12 @@
 import React from 'react';
-
-import { Box, Button, TextField, Typography, InputAdornment,Avatar, Container } from '@mui/material';
+import { Box, Button, TextField, Typography} from '@mui/material';
 import { Lock, Person } from '@mui/icons-material';
 import { styled, width } from '@mui/system';
 
 
 
 const BackgroundContainer = styled('div')({
-    backgroundImage: 'url("/img/dream-about-scuba-diving.jpg")', 
+    backgroundImage: 'url("/images/dream-about-scuba-diving.jpg")', 
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '100vh',
@@ -31,7 +30,7 @@ const BackgroundContainer = styled('div')({
 
         <BackgroundContainer>
             <LoginBox>
-            <img src="/img/aq.png" alt="Logo" style={{ width: '350px', marginBottom: '1rem' }} />
+            <img src="/images/aq.png" alt="Logo" style={{ width: '350px', marginBottom: '1rem' }} />
             <Typography variant="h5" gutterBottom color="white">Bienvenido/a</Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '1rem'}}>
                 <Person sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
@@ -51,7 +50,7 @@ const BackgroundContainer = styled('div')({
             <Typography variant="body2" color="white" sx={{ marginBottom: '1rem', cursor: 'pointer' }}>
           ¿Olvidaste tu contraseña?
         </Typography>
-        <Button variant="contained" sx={{backgroundColor: '#9AF087', color: 'black',}} >
+        <Button variant="contained" href='/Dashboard' sx={{backgroundColor: '#9AF087', color: 'black',}} >
           Ingresar
         </Button>
 

@@ -4,13 +4,13 @@
       "teams": [
         {
           "teamId": "T1",
-          "supervisor": "Supervisor A",
-          "buzos": ["Buzo 1", "Buzo 2", "Buzo 3"]
+          "supervisor": "Pedro Torero J.",
+    "buzos": ["Rosario Gomez J.", "Juana López D.", "Juan Bustos C.", "Antonio Jara Z."]
         },
         {
           "teamId": "T2",
-          "supervisor": "Supervisor B",
-          "buzos": ["Buzo 4", "Buzo 5", "Buzo 6"]
+          "supervisor": "Pedro Torero J.",
+    "buzos": ["Rosario Gomez J.", "Juana López D.", "Juan Bustos C.", "Antonio Jara Z."]
         }
       ]
     },
@@ -19,8 +19,8 @@
       "teams": [
         {
           "teamId": "T3",
-          "supervisor": "Supervisor C",
-          "buzos": ["Buzo 7", "Buzo 8", "Buzo 9"]
+          "supervisor": "Pedro Torero J.",
+    "buzos": ["Rosario Gomez J.", "Juana López D.", "Juan Bustos C.", "Antonio Jara Z."]
         }
       ]
     }

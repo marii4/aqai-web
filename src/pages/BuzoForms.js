@@ -1,10 +1,13 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { Box, Paper, Toolbar, Breadcrumbs, Typography, Button, InputAdornment, IconButton, Stack } from '@mui/material';
+import { Box, Paper, Toolbar, Typography, Button, InputAdornment, IconButton } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
+import Header from '../components/Header';
+import Breadcrumb from "../components/Breadcrumb";
+import { Link } from "react-router-dom";
 
 // arregar ids
 
@@ -38,12 +41,13 @@ const FormsBuzo= () =>{
 
     return(
         <Box>
+            <Header/>
             <Box component="main" sx={{ flexGrow: 1, p: 3, marginLeft: 30, marginTop:4 }}> 
                 <Toolbar/>
                 <Box sx={{ padding: 1, display: 'flex', justifyContent: 'space-between' }}>
                     <Paper elevation={0} sx={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2, height: '%100', backgroundColor: 'rgba(0, 222, 174, 0.23)' }}>
-                        <Box sx={{paddingX: 3, paddingY: 1.5 }}>
-                            Aqui va el Breadcrumbs
+                    <Box sx={{px: 2, pt:1}}>
+                            <Breadcrumb />
                         </Box>
                         <Box sx={{paddingX: 2}}>
                             <Typography variant="h6">Nuevo Buzo</Typography>
@@ -185,6 +189,7 @@ const FormsBuzo= () =>{
                             >
                             <Button 
                                 variant="contained" 
+                                component={Link} to="/Buzos"
                                 sx={{
                                 width: '150px', // Tamaño más pequeño
                                 height: '40px', // Ajusta la altura si es necesario

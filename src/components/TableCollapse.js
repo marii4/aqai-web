@@ -39,7 +39,7 @@ const TableCollapse = () => {
             <TableCell sx={{fontWeight: 'bold'}}>Fecha Termino</TableCell>
             <TableCell sx={{fontWeight: 'bold'}}>Empresa</TableCell>
             
-            <TableCell align="right" sx={{fontWeight: 'bold'}}>Teams</TableCell>
+            <TableCell align="center" sx={{fontWeight: 'bold'}}>Teams</TableCell>
           </TableRow>
         </TableHead>
 
@@ -55,7 +55,7 @@ const TableCollapse = () => {
                 <TableCell>{new Date(row.fechaTermino).toLocaleDateString()}</TableCell>
                 <TableCell>{row.empresa}</TableCell>
                 
-                <TableCell align="right">
+                <TableCell align="center">
                   <IconButton onClick={() => handleToggle(row.id)}>
                     {openRow[row.id] ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
                   </IconButton>

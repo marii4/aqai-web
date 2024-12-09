@@ -1,0 +1,103 @@
+[
+    {
+      "nombre": "Juan Bustos C.",
+      "rut": "14.234.254-0",
+      "habilitado": false
+    },
+    {
+      "nombre": "Antonio Jara Z.",
+      "rut": "16.323.431-8",
+      "habilitado": true
+    },
+    {
+      "nombre": "Rosario Gomez J.",
+      "rut": "12.564.321-0",
+      "habilitado": false
+    },
+    {
+      "nombre": "Juana López D.",
+      "rut": "11.234.543-2",
+      "habilitado": true
+    },
+    {
+      "nombre": "Pedro Torero J.",
+      "rut": "11.234.543-8",
+      "habilitado": true
+    },
+    {
+      "nombre": "Marcelo Torres P.",
+      "rut": "18.234.564-7",
+      "habilitado": true
+    },
+    {
+      "nombre": "Claudia Rivera L.",
+      "rut": "13.345.231-4",
+      "habilitado": false
+    },
+    {
+      "nombre": "Tomás Aguilera B.",
+      "rut": "15.765.432-6",
+      "habilitado": true
+    },
+    {
+      "nombre": "Isabel Miranda V.",
+      "rut": "10.432.156-9",
+      "habilitado": false
+    },
+    {
+      "nombre": "Gonzalo Hernández C.",
+      "rut": "17.654.321-3",
+      "habilitado": true
+    },
+    {
+      "nombre": "Luisa Figueroa M.",
+      "rut": "12.678.543-5",
+      "habilitado": true
+    },
+    {
+      "nombre": "Cristóbal Saavedra Q.",
+      "rut": "14.432.765-1",
+      "habilitado": false
+    },
+    {
+      "nombre": "María Paredes G.",
+      "rut": "11.987.654-2",
+      "habilitado": false
+    },
+    {
+      "nombre": "Francisco Vega K.",
+      "rut": "18.765.432-0",
+      "habilitado": true
+    },
+    {
+      "nombre": "Beatriz Morales Z.",
+      "rut": "16.543.210-4",
+      "habilitado": true
+    },
+    {
+      "nombre": "Carlos Castillo J.",
+      "rut": "13.987.654-3",
+      "habilitado": false
+    },
+    {
+      "nombre": "Elena Contreras S.",
+      "rut": "19.543.217-6",
+      "habilitado": true
+    },
+    {
+      "nombre": "Ricardo Vargas O.",
+      "rut": "10.234.765-8",
+      "habilitado": false
+    },
+    {
+      "nombre": "Carolina Núñez H.",
+      "rut": "15.876.543-7",
+      "habilitado": true
+    },
+    {
+      "nombre": "Sergio Palma U.",
+      "rut": "12.456.789-1",
+      "habilitado": false
+    }
+  ]
+  

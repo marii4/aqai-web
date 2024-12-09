@@ -1,15 +1,14 @@
 import * as React from 'react';
 import { Box, Paper, Toolbar, Typography, Button } from '@mui/material';
-import TableCollapse from './TableCollapse';
+import TableTeams from './TableTeams';
 import AddIcon from '@mui/icons-material/Add';
-import Breadcrumb from "./Breadcrumb";
-
+import Breadcrumb from "../components/Breadcrumb";
 import { Link } from "react-router-dom";
 
 
-const PaperMarea = () => {
+const PaperTeams = () => {
     return (
-        <Box>
+        
             <Box component="main" sx={{ flexGrow: 1, p: 3, marginLeft: 30, marginTop: 4 }}>
                 <Toolbar/>
                 <Box sx={{ padding: 1, display: 'flex', justifyContent: 'space-between' }}>
@@ -19,10 +18,12 @@ const PaperMarea = () => {
                             <Breadcrumb />
                         </Box>
                         <Box sx={{paddingX: 5}}>
-                            <Typography variant="h6" sx={{fontWeight: 'bold'}}>Mareas en Curso</Typography>
+                            <Typography variant="h6" sx={{fontWeight: 'bold'}}>Teams</Typography>
                         </Box>
                         <Box sx={{paddingX: 2}}>
-                        <TableCollapse/>
+                            <TableTeams></TableTeams>
+                            
+                        
                         </Box>
                         
                         <Box
@@ -37,7 +38,7 @@ const PaperMarea = () => {
                             >
                             <Button 
                                 variant="contained" 
-                                component={Link} to="/Marea/NuevaMarea"
+                                component={Link} to="/Teams/NuevoTeam"
                                 sx={{
                                 width: '200px', // Tamaño más pequeño
                                 height: '40px', // Ajusta la altura si es necesario
@@ -46,7 +47,7 @@ const PaperMarea = () => {
                                 }}
                             >
                                 <AddIcon sx={{ marginRight: 1 }} />
-                                Nueva Marea
+                                Nuevo Teams
                             </Button>
                             </Box>
                     
@@ -57,10 +58,9 @@ const PaperMarea = () => {
             </Box>
 
 
-        </Box>
        
     );
 
 };
 
-export default PaperMarea;
+export default PaperTeams;

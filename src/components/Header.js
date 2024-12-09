@@ -1,23 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { AppBar, Toolbar, Typography, Avatar, Box, CssBaseline } from '@mui/material';
 import DrawerHeader from './DrawerHeader';
 
 
 
 const Header = ({ userName, logoSrc }) => {
-  const [drawerOpen, setDrawerOpen] = useState(false);
 
-  const toggleDrawer = (open) => {
-    setDrawerOpen(open);
-  };
 
   return (
-    <Box sx={{ display: 'flex' }}> 
+    <Box contained sx={{ display: 'flex' }}> 
         <CssBaseline />
         <AppBar position="fixed" sx={{backgroundColor: '#00ABE1', zIndex: (theme) => theme.zIndex.drawer + 1 }}>
             <Toolbar>
                 <Box sx={{ flexGrow: 1 }}>
-                    <img src={'/img/aq.png'} alt="Logo" style={{ height: '85px' }} />
+                    <img src={'/images/aq.png'} alt="Logo" style={{ height: '80px' }} />
                 </Box>
 
                 {/* Avatar y Nombre */}

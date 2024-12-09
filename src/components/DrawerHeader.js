@@ -17,6 +17,10 @@ import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import ExpandLess from '@mui/icons-material/ExpandLess'; // Icono para desplegar menos
 import ExpandMore from '@mui/icons-material/ExpandMore'; // Icono para desplegar más
 
+import { Link } from "react-router-dom"; // Importar Link de React Router
+
+
+
 const drawerWidth = 240;
 
 export default function DrawerHeader() {
@@ -30,7 +34,12 @@ export default function DrawerHeader() {
 
 
   return (
+
+    
+
+
     <Box >
+
       <Drawer
         variant="permanent"
         sx={{
@@ -42,7 +51,7 @@ export default function DrawerHeader() {
         <Toolbar sx={{backgroundColor: 'red'}}/>
         <Box sx={{ overflow: 'auto',  marginTop: '50px' }}>
           <List>
-            <ListItem button>              
+            <ListItem button component={Link} to="/Marea">              
               <ListItemIcon>
                 <DirectionsBoatIcon />
               </ListItemIcon>
@@ -57,12 +66,12 @@ export default function DrawerHeader() {
             </ListItem>
             <Collapse in={openPersonal} timeout="auto" unmountOnExit sx={{backgroundColor: '#00ABE1'}}>
               <List component="div" disablePadding>
-                <ListItem button sx={{textAlign: 'right', paddingRight: 5 }}>
+                <ListItem button component={Link} to="/Buzos" sx={{textAlign: 'right', paddingRight: 5 }}>
                   
-                  <ListItemText primary="Buzos"/>
+                  <ListItemText primary="Buzos" />
                 </ListItem>
                 <Divider></Divider>
-                <ListItem button sx={{textAlign: 'right', paddingRight: 5 }}>
+                <ListItem button component={Link} to="/Teams" sx={{textAlign: 'right', paddingRight: 5 }}>
                   
                   <ListItemText primary="Teams" />
                 </ListItem>
@@ -84,9 +93,9 @@ export default function DrawerHeader() {
           </List>
           <Divider />
           <List>
-            {['Cerrar sesion'].map((text) => (
+            {['Cerrar sesión'].map((text) => (
               <ListItem key={text} disablePadding>
-                <ListItemButton>
+                <ListItemButton component={Link} to="/">
                   <ListItemIcon>
                     {<LogoutIcon/>}
                   </ListItemIcon>
