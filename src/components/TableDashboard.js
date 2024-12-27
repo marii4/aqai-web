@@ -27,7 +27,7 @@ const TableDashboard = () => {
   };
 
   return (
-    <TableContainer sx={{ padding: 2}}>
+    <TableContainer sx={{ paddingX: 2}}>
       <Table size="small" aria-label="dense table">
         <TableHead>
           <TableRow>

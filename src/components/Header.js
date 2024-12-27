@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Avatar, Box, CssBaseline } from '@mui/material';
 import DrawerHeader from './DrawerHeader';
+import { Link } from "react-router-dom";
 
 
 
@@ -12,7 +13,8 @@ const Header = ({ userName, logoSrc }) => {
         <CssBaseline />
         <AppBar position="fixed" sx={{backgroundColor: '#00ABE1', zIndex: (theme) => theme.zIndex.drawer + 1 }}>
             <Toolbar>
-                <Box sx={{ flexGrow: 1 }}>
+                <Box sx={{ flexGrow: 1 }} component={Link} to="/Marea">
+                
                     <img src={'/images/aq.png'} alt="Logo" style={{ height: '80px' }} />
                 </Box>
 

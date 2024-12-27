@@ -20,9 +20,6 @@ import ExpandMore from '@mui/icons-material/ExpandMore'; // Icono para desplegar
 import { Link } from "react-router-dom"; // Importar Link de React Router
 
 
-
-const drawerWidth = 240;
-
 export default function DrawerHeader() {
 
   
@@ -34,22 +31,16 @@ export default function DrawerHeader() {
 
 
   return (
-
-    
-
-
-    <Box >
-
       <Drawer
         variant="permanent"
         sx={{
-            width: drawerWidth,
+            width: 220,
             flexShrink: 0,
-            [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box', backgroundColor: 'rgba(0, 171, 225, 0.65)' },
+            [`& .MuiDrawer-paper`]: { width: 220, boxSizing: 'border-box', backgroundColor: 'rgba(0, 171, 225, 0.65)' },
         }}
       >
-        <Toolbar sx={{backgroundColor: 'red'}}/>
-        <Box sx={{ overflow: 'auto',  marginTop: '50px' }}>
+        <Toolbar/>
+        <Box sx={{ overflow: 'auto',  marginTop: 4 }}>
           <List>
             <ListItem button component={Link} to="/Marea">              
               <ListItemIcon>
@@ -66,12 +57,12 @@ export default function DrawerHeader() {
             </ListItem>
             <Collapse in={openPersonal} timeout="auto" unmountOnExit sx={{backgroundColor: '#00ABE1'}}>
               <List component="div" disablePadding>
-                <ListItem button component={Link} to="/Buzos" sx={{textAlign: 'right', paddingRight: 5 }}>
+                <ListItem button component={Link} to="/Buzos" sx={{textAlign: 'right', paddingRight: 4 }}>
                   
                   <ListItemText primary="Buzos" />
                 </ListItem>
                 <Divider></Divider>
-                <ListItem button component={Link} to="/Teams" sx={{textAlign: 'right', paddingRight: 5 }}>
+                <ListItem button component={Link} to="/Teams" sx={{textAlign: 'right', paddingRight: 4 }}>
                   
                   <ListItemText primary="Teams" />
                 </ListItem>
@@ -106,8 +97,7 @@ export default function DrawerHeader() {
           </List>
         </Box>
       </Drawer>
-      
-    </Box>
+    
   );
 }
 

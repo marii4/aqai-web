@@ -19,23 +19,6 @@ import axios from "axios";
 const TableBuzos = () => {
   const [buzos, setBuzos] = useState(buzosData);
   
-  useEffect( () =>{
-    const FetchData =  async () =>{
-        try{
-          const response = await axios.get("http://localhost:3000/api/v1/buzos/Compañia1", {
-            withCredentials: true, // Incluye cookies
-          })
-          if(response.data){
-            setBuzos(response.data.data)
-            console.log(response)
-
-          }
-        }catch(e){
-          console.error(e)
-        }
-    }
-    FetchData()
-  },[buzos])
 
   // Función para manejar el cambio de estado del switch
   const handleSwitchChange = (index) => {

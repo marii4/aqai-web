@@ -8,7 +8,6 @@ import TableCollapse from '../components/TableCollapse';
 
 
 const DashboardBody = () => {
-    
   return (
 
     <Box component="main" > 

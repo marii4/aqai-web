@@ -8,7 +8,7 @@ import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
 import Header from '../components/Header';
 import Breadcrumb from "../components/Breadcrumb";
 import { Link } from "react-router-dom";
-
+import { createBuzo } from '../services/buzoService';
 // arregar ids
 
 const FormsBuzo= () =>{
@@ -17,8 +17,16 @@ const FormsBuzo= () =>{
     const [selectedDate, setSelectedDate] = useState(null); // Fecha vencimiento mattricula
 
     const [selectedDateExman, setSelectedDateExam] = useState(null); // Fecha vencimiento exam
-
     
+    const [formData, setFormData] = useState({
+        nombres: '',
+        apellidos: '',
+        rut: '',
+        email: '',
+        celular: '',
+        numeroMatricula: '',
+    });
+    const [photo, setPhoto] = useState('');
 
     const [fileName, setFileName] = useState('');
 
@@ -29,8 +37,30 @@ const FormsBuzo= () =>{
         }
     };
 
+    const handleCreateBuzo = async () => {
+        const newBuzo = {
+            "nombre": formData.nombres,
+            "apellido": formData.apellidos,
+            "rut": formData.rut,
+            "mail": formData.email,
+            "compania": "Compañia1",
+            "foto": photo,
+            "licenciaBuzo": formData.numeroMatricula,
+            "licenciaBuzoVenc": selectedDate,
+            "examMedVenc": selectedDateExman,
+            "contrasena": "12",
+            "certificados": fileName,
+            "estaHabilitado": false
+        }
+        try{
+            const createdBuzo = await createBuzo(newBuzo);
 
-    const [photo, setPhoto] = useState('');
+        }catch(error){
+            console.log(error);
+        }
+    }
+
+
 
     const handleFileChangePhoto = (event) => {
         const file = event.target.files[0];
@@ -61,11 +91,10 @@ const FormsBuzo= () =>{
                             flexWrap: 'wrap',
                             marginX: 15,
                             borderRadius: 3}}>
-                        <TextField
-                           id="filled-basic" label="Nombres" />
-                        <TextField id="filled-basic" label="Apellidos" variant="outlined"/>
+                        <TextField id="filled-basic" label="Nombres" value={formData.nombres} onChange={(e) => setFormData({ ...formData, nombres: e.target.value })}/>
+                        <TextField id="filled-basic" label="Apellidos" variant="outlined"  value={formData.apellidos} onChange={(e) => setFormData({ ...formData, apellidos: e.target.value })}/>
 
-                        <TextField id="filled-basic" label="Rut" variant="outlined"/>
+                        <TextField id="filled-basic" label="Rut" variant="outlined"  value={formData.rut} onChange={(e) => setFormData({ ...formData, rut: e.target.value })}/>
 
                         <LocalizationProvider dateAdapter={AdapterDayjs}>
                             <DatePicker
@@ -77,8 +106,8 @@ const FormsBuzo= () =>{
                                 
                             />
                         </LocalizationProvider>
-                        <TextField id="filled-basic" label="Email" variant="outlined"/>
-                        <TextField id="filled-basic" label="Numero de Celular" variant="outlined"/>
+                        <TextField id="filled-basic" label="Email" variant="outlined"  value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+                        <TextField id="filled-basic" label="Numero de Celular" variant="outlined" value={formData.celular} onChange={(e) => setFormData({ ...formData, celular: e.target.value })}/>
                          {/* Input de archivo oculto */}
                          <input
                             id="file-input"
@@ -119,7 +148,7 @@ const FormsBuzo= () =>{
                             marginX: 15,
                             borderRadius: 3,
                              }}>
-                                <TextField id="filled-basic" label="Numero de Matricula" variant="outlined"/>
+                                <TextField id="filled-basic" label="Numero de Matricula" variant="outlined"value={formData.numeroMatricula} onChange={(e) => setFormData({ ...formData, numeroMatricula: e.target.value })}/>
                      
 
                         <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -190,6 +219,7 @@ const FormsBuzo= () =>{
                             <Button 
                                 variant="contained" 
                                 component={Link} to="/Buzos"
+                                onClick={handleCreateBuzo}
                                 sx={{
                                 width: '150px', // Tamaño más pequeño
                                 height: '40px', // Ajusta la altura si es necesario

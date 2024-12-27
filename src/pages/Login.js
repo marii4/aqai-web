@@ -2,8 +2,9 @@ import React from 'react';
 import { Box, Button, TextField, Typography} from '@mui/material';
 import { Lock, Person } from '@mui/icons-material';
 import { styled, width } from '@mui/system';
-
-
+import {login} from '../services/loginService'
+import {useState} from 'react';
+import { useNavigate } from 'react-router-dom'; 
 
 const BackgroundContainer = styled('div')({
     backgroundImage: 'url("/images/dream-about-scuba-diving.jpg")', 
@@ -26,6 +27,27 @@ const BackgroundContainer = styled('div')({
   });
 
   const Login = () => {
+    const [formData, setFormData] = useState({
+      usuario: '',
+      password: '',
+  });
+  const navigate = useNavigate(); 
+  const handleLogin = async () => { 
+    try{
+      const credentials = {
+        usuario: formData.usuario,
+        password: formData.password,
+      }
+      const response = await login(credentials);
+      if (response) {
+        navigate('/Dashboard');
+      } else {
+        alert('Credenciales incorrectas');
+      }
+    }catch(error){
+      console.log(error);
+  }}
+
     return(
 
         <BackgroundContainer>
@@ -38,6 +60,7 @@ const BackgroundContainer = styled('div')({
                 InputProps={{
                     style: { backgroundColor: 'white', borderRadius: '10px' }
                   }}
+                  value={formData.usuario} onChange={(e) => setFormData({ ...formData, usuario: e.target.value })}
                 />
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '1rem' }}>
@@ -45,12 +68,14 @@ const BackgroundContainer = styled('div')({
                 <TextField  label="Contraseña" variant="filled" type="password" fullWidth 
                 InputProps={{
                     style: { backgroundColor: 'white', borderRadius: '10px' }
-                  }}/>
+                  }}
+                  value={formData.password} onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                  />
             </Box>
             <Typography variant="body2" color="white" sx={{ marginBottom: '1rem', cursor: 'pointer' }}>
           ¿Olvidaste tu contraseña?
         </Typography>
-        <Button variant="contained" href='/Dashboard' sx={{backgroundColor: '#9AF087', color: 'black',}} >
+        <Button variant="contained" sx={{backgroundColor: '#9AF087', color: 'black',}}  onClick={handleLogin}>
           Ingresar
         </Button>
 
@@ -63,5 +88,5 @@ const BackgroundContainer = styled('div')({
 
     );
   };
-
+  
   export default Login;
