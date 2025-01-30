@@ -8,22 +8,18 @@ import { Link } from "react-router-dom";
 
 const PaperTeams = () => {
     return (
-        
-            <Box component="main" sx={{ flexGrow: 1, p: 3, marginLeft: 30, marginTop: 4 }}>
-                <Toolbar/>
-                <Box sx={{ padding: 1, display: 'flex', justifyContent: 'space-between' }}>
-           
-                    <Paper elevation={0} sx={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2, height: '%100', backgroundColor: 'rgba(0, 222, 174, 0.23)' }}>
-                        <Box sx={{px: 2, pt:1}}>
-                            <Breadcrumb />
-                        </Box>
+        <Box component="main" sx={{ flexGrow: 1, p: 2, marginLeft: 27, marginTop: 2 }}>
+            <Toolbar/>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                <Paper elevation={1} sx={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2, height: '%100', backgroundColor: 'rgba(0, 222, 174, 0.23)' }}>
+                    <Box sx={{px: 2, pt:1}}>
+                        <Breadcrumb />
+                    </Box>
                         <Box sx={{paddingX: 5}}>
                             <Typography variant="h6" sx={{fontWeight: 'bold'}}>Teams</Typography>
                         </Box>
                         <Box sx={{paddingX: 2}}>
                             <TableTeams></TableTeams>
-                            
-                        
                         </Box>
                         
                         <Box
@@ -31,8 +27,8 @@ const PaperTeams = () => {
                                 display: 'flex',
                                 flexDirection: 'column',
                                 alignItems: 'flex-end', // Alinea los elementos al inicio (izquierda)
-                                margin: 4,
-                                paddingRight: 2, 
+                                mb: 3,
+                                paddingRight: 3, 
                                 //backgroundColor: 'red'
                             }}
                             >

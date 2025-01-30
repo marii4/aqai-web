@@ -22,6 +22,127 @@
       "marea": 125,
       "empresa": "Empresa C",
       "documento": "documento3.pdf"
+    },
+    {
+      "id": 4,
+      "fechaInicio": "2024-09-10",
+      "fechaTermino": "2024-10-10",
+      "marea": 126,
+      "empresa": "Empresa D",
+      "documento": "documento4.pdf"
+    },
+    {
+      "id": 5,
+      "fechaInicio": "2024-08-15",
+      "fechaTermino": "2024-09-15",
+      "marea": 127,
+      "empresa": "Empresa E",
+      "documento": "documento5.pdf"
+    },
+    {
+      "id": 6,
+      "fechaInicio": "2024-07-20",
+      "fechaTermino": "2024-08-20",
+      "marea": 128,
+      "empresa": "Empresa F",
+      "documento": "documento6.pdf"
+    },
+    {
+      "id": 7,
+      "fechaInicio": "2024-06-25",
+      "fechaTermino": "2024-07-25",
+      "marea": 129,
+      "empresa": "Empresa G",
+      "documento": "documento7.pdf"
+    },
+    {
+      "id": 8,
+      "fechaInicio": "2024-05-10",
+      "fechaTermino": "2024-06-10",
+      "marea": 130,
+      "empresa": "Empresa H",
+      "documento": "documento8.pdf"
+    },
+    {
+      "id": 9,
+      "fechaInicio": "2024-04-15",
+      "fechaTermino": "2024-05-15",
+      "marea": 131,
+      "empresa": "Empresa I",
+      "documento": "documento9.pdf"
+    },
+    {
+      "id": 10,
+      "fechaInicio": "2024-03-20",
+      "fechaTermino": "2024-04-20",
+      "marea": 132,
+      "empresa": "Empresa J",
+      "documento": "documento10.pdf"
+    },
+    {
+      "id": 11,
+      "fechaInicio": "2024-02-10",
+      "fechaTermino": "2024-03-10",
+      "marea": 133,
+      "empresa": "Empresa K",
+      "documento": "documento11.pdf"
+    },
+    {
+      "id": 12,
+      "fechaInicio": "2024-01-15",
+      "fechaTermino": "2024-02-15",
+      "marea": 134,
+      "empresa": "Empresa L",
+      "documento": "documento12.pdf"
+    },
+    {
+      "id": 13,
+      "fechaInicio": "2023-12-05",
+      "fechaTermino": "2024-01-05",
+      "marea": 135,
+      "empresa": "Empresa M",
+      "documento": "documento13.pdf"
+    },
+    {
+      "id": 14,
+      "fechaInicio": "2023-11-10",
+      "fechaTermino": "2023-12-10",
+      "marea": 136,
+      "empresa": "Empresa N",
+      "documento": "documento14.pdf"
+    },
+    {
+      "id": 15,
+      "fechaInicio": "2023-10-20",
+      "fechaTermino": "2023-11-20",
+      "marea": 137,
+      "empresa": "Empresa O",
+      "documento": "documento15.pdf"
+    },
+    {
+      "id": 16,
+      "fechaInicio": "2023-09-25",
+      "fechaTermino": "2023-10-25",
+      "marea": 138,
+      "empresa": "Empresa P",
+      "documento": "documento16.pdf"
+    },
+    {
+      "id": 17,
+      "fechaInicio": "2023-08-15",
+      "fechaTermino": "2023-09-15",
+      "marea": 139,
+      "empresa": "Empresa Q",
+      "documento": "documento17.pdf"
+    },
+    {
+      "id": 18,
+      "fechaInicio": "2023-07-10",
+      "fechaTermino": "2023-08-10",
+      "marea": 140,
+      "empresa": "Empresa R",
+      "documento": "documento18.pdf"
     }
+
   ]
   

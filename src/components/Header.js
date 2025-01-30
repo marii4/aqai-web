@@ -9,11 +9,11 @@ const Header = ({ userName, logoSrc }) => {
 
 
   return (
-    <Box contained sx={{ display: 'flex' }}> 
+    <Box  contained sx={{ display: 'flex' }}> 
         <CssBaseline />
-        <AppBar position="fixed" sx={{backgroundColor: '#00ABE1', zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+        <AppBar elevation={0} position="fixed" sx={{backgroundColor: '#00ABE1', zIndex: (theme) => theme.zIndex.drawer + 1 }}>
             <Toolbar>
-                <Box sx={{ flexGrow: 1 }} component={Link} to="/Marea">
+                <Box sx={{ flexGrow: 1 }} component={Link} to="/Dashboard">
                 
                     <img src={'/images/aq.png'} alt="Logo" style={{ height: '80px' }} />
                 </Box>

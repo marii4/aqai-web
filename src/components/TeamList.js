@@ -34,7 +34,7 @@ const TeamList = () => {
   };
 
   return (
-    <Box sx={{ maxWidth: 600, margin: "auto" }}>
+    <Box sx={{ maxWidth: 600, maxHeight: 400, margin: "auto",  overflow: "auto" }}>
       
       <List>
         {teamsData.map((marea) =>

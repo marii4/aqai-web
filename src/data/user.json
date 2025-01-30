@@ -1,0 +1,31 @@
+[
+    {
+      "usuario": "juan.gonzalez",
+      "nombre": "Juan",
+      "apellido": "Gonzalez",
+      "rut": "88888-8",
+      "rol": "Administrador de Equipos"
+    },
+    {
+      "usuario": "mariana.gonzalez",
+      "nombre": "Mariana",
+      "apellido": "Gonzalez",
+      "rut": "99999-8",
+      "rol": "Administrador"
+    },
+    {
+      "usuario": "eli.lopez",
+      "nombre": "Eli",
+      "apellido": "Lopez",
+      "rut": "111111-8",
+      "rol": "Supervisor"
+    },
+    {
+      "usuario": "pedro.astorga",
+      "nombre": "Pedro",
+      "apellido": "Astorga",
+      "rut": "444444-8",
+      "rol": "Consultor de Reportes"
+    }
+  ]
+  

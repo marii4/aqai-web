@@ -28,7 +28,7 @@ const TableCollapse = () => {
   };
 
   return (
-    <TableContainer sx={{ padding: 2}}>
+    <TableContainer sx={{ paddingX: 2, maxHeight: 400}}>
       <Table size="small">
         {/* Cabecera de la tabla */}
         <TableHead >
@@ -45,7 +45,7 @@ const TableCollapse = () => {
 
         {/* Cuerpo de la tabla */}
         <TableBody>
-          {data.map((row) => (
+          {data.slice(0, 4).map((row) => (
             <React.Fragment key={row.id}>
               {/* Fila principal */}
               <TableRow>

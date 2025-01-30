@@ -1,15 +1,16 @@
 import * as React from 'react';
-import { Box} from '@mui/material';
-import Header from '../components/Header';
-import PaperBuzo from '../components/PaperBuzo';
+import { Box, Toolbar } from '@mui/material';
+import Header from '../components/HeaderNew';
+import PaperBuzo from '../components/BuzoPaper';
 
 
 
 const BuzoPage= () =>{
 
     return(
-        <Box>
-            <Header userName='Mariana'/>
+        <Box component="main">
+            <Header userName='Mariana Gonzales'/>
+            <Toolbar/>
             <PaperBuzo/>           
         </Box>
     );

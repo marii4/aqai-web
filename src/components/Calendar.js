@@ -7,8 +7,9 @@ import "dayjs/locale/es"; // Importa el idioma español
 
 const Calendar = ({ value }) => {
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="es">
+    <LocalizationProvider dateAdapter={AdapterDayjs} adapterLocale="es" >
       <DateCalendar
+        orientation="landscape" 
         value={dayjs(value)}
         format="DD/MM/YYYY"
       />

@@ -27,7 +27,7 @@ const TableDashboard = () => {
   };
 
   return (
-    <TableContainer sx={{ paddingX: 2}}>
+    <TableContainer sx={{ paddingX: 2, maxHeight: 400}}>
       <Table size="small" aria-label="dense table">
         <TableHead>
           <TableRow>
@@ -47,7 +47,7 @@ const TableDashboard = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {sortedData.map((row) => (
+          {sortedData.slice(0, 4).map((row) => (
             <TableRow key={row.id}>
               <TableCell>{new Date(row.fechaInicio).toLocaleDateString()}</TableCell>
               <TableCell>{row.marea}</TableCell>

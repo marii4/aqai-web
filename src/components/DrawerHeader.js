@@ -36,11 +36,11 @@ export default function DrawerHeader() {
         sx={{
             width: 220,
             flexShrink: 0,
-            [`& .MuiDrawer-paper`]: { width: 220, boxSizing: 'border-box', backgroundColor: 'rgba(0, 171, 225, 0.65)' },
+            [`& .MuiDrawer-paper`]: { width: 220, boxSizing: 'border-box', backgroundColor: 'rgba(0, 171, 225, 0.65)', color: 'white' },
         }}
       >
         <Toolbar/>
-        <Box sx={{ overflow: 'auto',  marginTop: 4 }}>
+        <Box sx={{ overflow: 'auto',  marginTop: 2 }}>
           <List>
             <ListItem button component={Link} to="/Marea">              
               <ListItemIcon>
@@ -68,14 +68,14 @@ export default function DrawerHeader() {
                 </ListItem>
               </List>
             </Collapse>
-            <ListItem button>              
+            <ListItem button component={Link} to="/Reportes">              
               <ListItemIcon>
               <ContentPasteIcon />
               </ListItemIcon>
               <ListItemText primary="Reportes" />
             </ListItem>
             
-            <ListItem button>              
+            <ListItem button component={Link} to="/Admin">              
               <ListItemIcon>
               <SupervisorAccountIcon />
               </ListItemIcon>

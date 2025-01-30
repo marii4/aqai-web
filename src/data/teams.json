@@ -5,22 +5,72 @@
         {
           "teamId": "T1",
           "supervisor": "Pedro Torero J.",
-    "buzos": ["Rosario Gomez J.", "Juana López D.", "Juan Bustos C.", "Antonio Jara Z."]
+    "buzos": [ "Juan Bustos C.", "Antonio Jara Z."]
         },
         {
           "teamId": "T2",
           "supervisor": "Pedro Torero J.",
-    "buzos": ["Rosario Gomez J.", "Juana López D.", "Juan Bustos C.", "Antonio Jara Z."]
+    "buzos": ["Rosario Gomez J.", "Juana López D."]
         }
       ]
-    },
+    }, 
     {
       "mareaId": 2,
       "teams": [
         {
           "teamId": "T3",
+          "supervisor": "Claudia Rivera L.",
+          "buzos": ["Marcelo Torres P.", "Tomás Aguilera B."]
+        },
+        {
+          "teamId": "T4",
+          "supervisor": "Claudia Rivera L.",
+          "buzos": ["Isabel Miranda V.", "Gonzalo Hernández C."]
+        }
+      ]
+    },
+    {
+      "mareaId": 3,
+      "teams": [
+        {
+          "teamId": "T5",
+          "supervisor": "Francisco Vega K.",
+          "buzos": ["Luisa Figueroa M.", "Cristóbal Saavedra Q."]
+        },
+        {
+          "teamId": "T6",
+          "supervisor": "Francisco Vega K.",
+          "buzos": ["María Paredes G.", "Beatriz Morales Z."]
+        }
+      ]
+    },
+    {
+      "mareaId": 4,
+      "teams": [
+        {
+          "teamId": "T7",
+          "supervisor": "Carlos Castillo J.",
+          "buzos": ["Elena Contreras S.", "Ricardo Vargas O."]
+        },
+        {
+          "teamId": "T8",
+          "supervisor": "Carlos Castillo J.",
+          "buzos": ["Carolina Núñez H.", "Sergio Palma U."]
+        }
+      ]
+    },
+    {
+      "mareaId": 5,
+      "teams": [
+        {
+          "teamId": "T9",
           "supervisor": "Pedro Torero J.",
-    "buzos": ["Rosario Gomez J.", "Juana López D.", "Juan Bustos C.", "Antonio Jara Z."]
+          "buzos": ["Juan Bustos C.", "Antonio Jara Z."]
+        },
+        {
+          "teamId": "T10",
+          "supervisor": "Claudia Rivera L.",
+          "buzos": ["Rosario Gomez J.", "Juana López D."]
         }
       ]
     }
