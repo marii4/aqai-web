@@ -15,6 +15,9 @@ import AdminPage from '../pages/AdminPage';
 import NuevoUserPage from '../pages/NuevoUserPage';
 import ReportesPage from '../pages/ReportesPage';
 import Dashboard from '../pages/DashboardAdminPage';
+import ReportesBuzoPage from '../pages/ReportesBuzoPage';
+import ReportesMareaPage from '../pages/ReportesMareaPage';
+import OnLinePage from '../pages/OnlinePage';
 
 const AppRoutes = () => {
   return (
@@ -30,8 +33,10 @@ const AppRoutes = () => {
         <Route path='/Teams/NuevoTeam' element={<TeamForms />}/>
         <Route path='/Admin' element={<AdminPage/>}/>
         <Route path='/Admin/NuevoUsuario' element={<NuevoUserPage />}/>
-        <Route path='/Reportes' element={<ReportesPage/>}/>
-        <Route path='/Reportes/Buzos' element={<NuevoUserPage />}/>
+        {/*<Route path='/Reportes' element={<ReportesPage/>}/>*/}
+        <Route path='/Reportes-Buzos' element={<ReportesBuzoPage />}/>
+        <Route path='/Reportes-Marea-Faena' element={<ReportesMareaPage />}/>
+        <Route path='/OnLine' element={<OnLinePage/>}/>
         <Route path='/DashboardAdmin' element={<Dashboard/>}/>
       </Routes>
     </Router>

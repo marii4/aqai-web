@@ -1,0 +1,77 @@
+[
+    {
+      "mareaId": 123,
+      "faenaId": 321,
+      "fechaFaena": "03-03-2025",
+      "teams": [
+        {
+          "teamId": "T7",
+          "supervisor": "Pedro Torero J.",
+          "buzos": ["Juan Bustos", "Carlos Muñoz"]
+        }
+      ],
+      "operacionesRealizadas": ["calado lobero", "costura lobera"]
+    },
+    {
+      "mareaId": 124,
+      "faenaId": 322,
+      "fechaFaena": "04-03-2025",
+      "teams": [
+        {
+          "teamId": "T8",
+          "supervisor": "Pedro Torero J.",
+          "buzos": ["Rosario Gomez J.", "Juana López D."]
+        }
+      ],
+      "operacionesRealizadas": ["calado lobero", "costura lobera"]
+    },
+    {
+      "mareaId": 125,
+      "faenaId": 323,
+      "fechaFaena": "05-03-2025",
+      "teams": [
+        {
+          "teamId": "T9",
+          "supervisor": "Alejandro Fuentes M.",
+          "buzos": ["Patricia Osorio L.", "Sergio Díaz P."]
+        },
+        {
+          "teamId": "T10",
+          "supervisor": "Alejandro Fuentes M.",
+          "buzos": ["Roberto Ibarra Q.", "Carolina Montes S."]
+        }
+      ],
+      "operacionesRealizadas": ["calado", "retiro de redes"]
+    },
+    {
+      "mareaId": 126,
+      "faenaId": 324,
+      "fechaFaena": "06-03-2025",
+      "teams": [
+        {
+          "teamId": "T11",
+          "supervisor": "Magdalena Ruiz H.",
+          "buzos": ["Oscar Serrano T.", "Daniela Muñoz L."]
+        }
+      ],
+      "operacionesRealizadas": ["calado costero", "revisión de trampas"]
+    },
+    {
+      "mareaId": 127,
+      "faenaId": 325,
+      "fechaFaena": "07-03-2025",
+      "teams": [
+        {
+          "teamId": "T12",
+          "supervisor": "Vicente Navarro B.",
+          "buzos": ["Paola Morales C.", "Javier Santibáñez R."]
+        },
+        {
+          "teamId": "T13",
+          "supervisor": "Vicente Navarro B.",
+          "buzos": ["Andrea González T.", "Pablo Lira S."]
+        }
+      ],
+      "operacionesRealizadas": ["costura lobera", "despliegue de redes", "recolección"]
+    }
+  ]

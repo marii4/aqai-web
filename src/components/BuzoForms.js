@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { Box, Typography, Button, InputAdornment, IconButton } from '@mui/material';
+import { Box, Button, InputAdornment, IconButton } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import "dayjs/locale/es";
 import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
@@ -70,7 +70,7 @@ const FormsBuzo= () =>{
 
     return(
         <Box>
-            <Typography variant="h6" sx={{px: 3, py:1, fontWeight: 'bold'}}>Nuevo Buzo</Typography>
+            
             <Box component="form" 
                 sx={{'& .MuiTextField-root': { m: 2, width: '35ch' },alignContent: 'center', 
                 justifyContent: 'center', backgroundColor: 'white',  

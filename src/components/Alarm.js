@@ -6,15 +6,6 @@ const DiverAlarms = () => {
   return (
     <Paper elevation={1} style={{ padding: 10, m:4, backgroundColor: "#e0f7f9" }}>
       {/* Encabezado */}
-      <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
-        
-        <TextField
-          variant="outlined"
-          size="small"
-          placeholder="Buscar Buzo"
-          style={{ backgroundColor: "white" }}
-        />
-      </Box>
 
       {/* Información del buzo */}
       <Box
@@ -27,6 +18,9 @@ const DiverAlarms = () => {
       >
         <Typography variant="body1">
           <strong>Nombre:</strong> Juan Bustos
+        </Typography>
+        <Typography variant="body1">
+          <strong>Estado:</strong> Activo
         </Typography>
         <Typography variant="body1">
           <strong>RUT:</strong> 8898888

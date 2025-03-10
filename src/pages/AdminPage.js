@@ -1,14 +1,15 @@
 import * as React from 'react';
-import { Box } from '@mui/material';
-import Header from '../components/Header';
-import PaperAdmin from '../components/PaperAdmin';
+import { Box, Toolbar } from '@mui/material';
+import Header from '../components/HeaderNew';
+import PaperAdmin from '../components/AdminPaper';
 
 
 
 const Admin = () => {
     return (
-        <Box>
-            <Header userName='Mariana'/>
+        <Box component="main">
+        <Header userName='Mariana Gonzales'/>
+        <Toolbar/>
             <PaperAdmin/>
             
         </Box>

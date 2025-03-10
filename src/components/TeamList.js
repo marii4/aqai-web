@@ -34,9 +34,7 @@ const TeamList = () => {
   };
 
   return (
-    <Box sx={{ maxWidth: 600, maxHeight: 400, margin: "auto",  overflow: "auto" }}>
-      
-      <List>
+    <Box sx={{ maxWidth: 600, maxHeight: 400,  overflow: "auto" }}><List>
         {teamsData.map((marea) =>
           marea.teams.map((team) => (
             <React.Fragment key={team.teamId}>

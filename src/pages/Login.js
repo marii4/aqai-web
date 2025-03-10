@@ -40,7 +40,7 @@ const BackgroundContainer = styled('div')({
       }
       const response = await login(credentials);
       if (response) {
-        navigate('/Dashboard');
+        navigate('/DashboardAdmin');
       } else {
         alert('Credenciales incorrectas');
       }

@@ -1,19 +1,19 @@
 import * as React from 'react';
 import { Box, Toolbar } from '@mui/material';
 import Header from '../components/HeaderNew';
-import PaperMarea from '../components/MareaPaper';
+import ReportesMareaPaper from '../components/ReportesMareaPaper';
 
 
-const Marea = () => {
-    return (
+const ReportesMareaPage= () =>{
+
+    return(
         <Box component="main">
             <Header userName='Mariana Gonzales'/>
             <Toolbar/>
-            <PaperMarea/>
+            <ReportesMareaPaper/>
+            
         </Box>
-
     );
+}
 
-};
-
-export default Marea;
+export default ReportesMareaPage;

@@ -1,19 +1,17 @@
 import * as React from 'react';
 import { Box, Toolbar } from '@mui/material';
 import Header from '../components/HeaderNew';
-import PaperMarea from '../components/MareaPaper';
+import OnLinePaper from '../components/OnlinePaper';
 
+const OnLinePage= () =>{
 
-const Marea = () => {
-    return (
+    return(
         <Box component="main">
             <Header userName='Mariana Gonzales'/>
             <Toolbar/>
-            <PaperMarea/>
+            <OnLinePaper/>
         </Box>
-
     );
+}
 
-};
-
-export default Marea;
+export default OnLinePage;
